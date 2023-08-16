@@ -60,8 +60,8 @@ services:
       INDEXER_COIN_BALANCES_BATCH_SIZE: 10
       INDEXER_RECEIPTS_BATCH_SIZE: 10
       INDEXER_EMPTY_BLOCKS_SANITIZER_BATCH_SIZE: 10 # sanitize empty block in this batch size
-      # SUBNETWORK: "NOS (TC L2)"
-      # CHAIN_ID: 42213
+      SUBNETWORK: ${SUBNETWORK}
+      CHAIN_ID: ${CHAIN_ID}
     ports:
       - 4000:4000
     volumes:
